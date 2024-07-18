@@ -37,6 +37,10 @@ main::-webkit-scrollbar {
   margin-right: 15px; /* Adds space between nav items */
 }
 
+.navbar-dark .nav-link {
+  color: #fff; /* Make the text color white */
+}
+
 .nav-link:hover {
   background-image: linear-gradient(
     to right,
@@ -145,4 +149,20 @@ main::-webkit-scrollbar {
   font-size: 0.875rem;
   color: #fff;
   margin-top: 1rem;
+}
+
+#glass-container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  color: white;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the wrapper spans the full width */
 }
