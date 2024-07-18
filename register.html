@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" href="Photos/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    body {
+      background: #121212 !important;
+      scroll-behavior: smooth;
+    }
+    .custom-navbar {
+      margin-bottom: 20px; /* Adjusts space below the navbar */
+    }
+    .nav-item {
+      margin-right: 15px; /* Adds space between nav items */
+    }
+
+    .nav-link:hover {
+      background-image: linear-gradient(
+        to right,
+        #569aff,
+        #88dfab
+      ); /* Example gradient */
+      -webkit-background-clip: text; /* Clipping the background to the text */
+      -webkit-text-fill-color: transparent;
+    }
+
+    .navbar {
+      height: 50px;
+    }
+
+    .navbar-dark,
+    .navbar[data-bs-theme="dark"] {
+      --bs-navbar-color: #fff;
+    }
+
+    .homeHeroFooter {
+      background: #212529;
+      color: #fff;
+      padding: 0.5rem; /* Reduced padding from 2rem to 1rem */
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .homeHeroFooterContent {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .homeHeroFooterNav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .footerNavLink {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .footerNavLink:hover {
+      color: #fff; /* Change text color if desired */
+      background-image: linear-gradient(
+        to right,
+        #569aff,
+        #88dfab
+      ); /* Example gradient */
+      -webkit-background-clip: text; /* Clipping the background to the text */
+      -webkit-text-fill-color: transparent; /* Making the text color transparent so the background shows through */
+    }
+
+    .homeHeroFooterCopy {
+      font-size: 0.875rem;
+      color: #fff;
+      margin-top: 1rem;
+    }
+    .text-center {
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sneakers.html">Sneakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shirts.html">Shirts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessories.html">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-2">
+              <h5 class="text-center">Sign Up Below</h5>
+          <div class="card" style="width: 60%; margin: 0 auto; padding: 20px">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputFirstName4" class="form-label">First Name</label>
+                <input type="name" class="form-control" id="fnputFirstName4" placeholder="Ex: John" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName4" class="form-label">Last Name</label>
+                <input type="name" class="form-control" id="inputLastName4" placeholder="Ex: Doe"/>
+              </div>
+              <form class="row g-3">
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: MyEmail@Email.com">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputPassword4" class="form-label">Re-Enter Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Street, Apartment, Studio, or Floor"
+                />
+              </div>
+              <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Hamster Village" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>New York</option>
+                  <option>New Jersey</option>
+                  <option>North Carolina</option>
+                  <option>Atlanta</option>
+                  <option>Florida</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="101101" />
+              </div>
+              <div class="col-12">
+                <h5>How did you hear about us?</h5>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Pinterest
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1"> Facebook </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Blog or publication
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Search engine (Google, Yahoo, Etc.)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Recommended by family or friend
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          </div>
+        </section>
+    </main>
+    <footer class="homeHeroFooter">
+      <div class="homeHeroFooterContent">
+        <div class="homeHeroFooterNav">
+          <a href="index.html" class="footerNavLink">HOME</a>
+          <a href="#" class="footerNavLink">ABOUT</a>
+          <a href="#" class="footerNavLink">NEWS</a>
+          <a href="#" class="footerNavLink">FAQ</a>
+          <a href="#" class="footerNavLink">CONTACT</a>
+          <a href="#" class="footerNavLink">SHIPPING</a>
+        </div>
+        <p class="homeHeroFooterCopy">
+          &copy; 2024 Zoom. All Rights Reserved. Thank you for shopping with us.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
